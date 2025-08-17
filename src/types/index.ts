@@ -12,7 +12,7 @@ export interface SiteContent {
   hero: HeroProps;
   techStack: TechStackItem[];
   education: EducationEntry[];
-  experience: ExperienceProps;
+  experience: ExperienceProps[];
   about: AboutProps;
 }
 
