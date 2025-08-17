@@ -1,7 +1,7 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Ayesha Dash — Backend Engineer & Distributed Systems Specialist",
+  title: "Ayesha Dash — Backend Engineer",
   author: "Ayesha Dash",
   description:
     "Backend Engineer with 4+ years of experience designing and scaling distributed systems. Skilled in Java, Spring Boot, Kafka, and AWS with a track record of delivering resilient microservices, event-driven architectures, and CI/CD automation.",
@@ -15,7 +15,7 @@ export const SITE_CONFIG: SiteConfig = {
   socialLinks: [
     { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
     { text: "Github", href: "https://github.com/Ayesha-Dash96" },
-    { text: "Resume", href: "/Ayesha.pdf" },
+    { text: "Resume", href: "/ayesha-dash-resume.pdf" },
   ],
   socialImage: "/AD.jpg",
   canonicalURL: "https://ayesha-dash.vercel.app/",
@@ -25,11 +25,11 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Ayesha Dash",
-    specialty: "Backend Engineer & Distributed Systems Specialist",
+    specialty: "Backend Engineer",
     summary:
       "I’m a backend engineer with 4.10 years of experience building distributed, fault-tolerant systems in Java, Spring Boot, and Kafka. I specialise in designing microservices, orchestrating event-driven workflows, and deploying resilient cloud-native applications on AWS. I hold an M.Sc. in Advanced Computer Science from the University of York, where I deepened my knowledge of scalable architectures and applied research to real-world system challenges.",
     email: "dashayesha17@gmail.com",
-    resumeLink: "/Ayesha.pdf",
+    resumeLink: "/ayesha-dash-resume.pdf",
   },
   techStack: [
   { name: "Java" },
@@ -61,8 +61,8 @@ export const SITE_CONTENT: SiteContent = {
     year: "2024",
   },
   {
-    degree: "B.Tech Computer Science and Engineering",
-    institution: "KIIT University",
+    degree: "B.Tech Electronics & Telecommunications",
+    institution: "BPUT",
     year: "2018",
   },
 ],
