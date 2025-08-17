@@ -21,6 +21,7 @@ export const SITE_CONFIG: SiteConfig = {
   canonicalURL: "https://ayesha-dash.vercel.app/",
 };
 
+
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Ayesha Dash",
