@@ -1,6 +1,21 @@
-{education.map((edu) => (
-  <div class="education-entry">
-    <h3>{edu.degree}</h3>
-    <p>{edu.institution} — {edu.year}</p>
+---
+import type { EducationEntry } from "@types";
+
+export interface Props {
+  education: EducationEntry[];
+}
+
+const { education } = Astro.props;
+---
+
+<section id="education" class="py-12">
+  <h2 class="text-2xl font-bold text-center mb-8">🎓 Education</h2>
+  <div class="max-w-3xl mx-auto space-y-6">
+    {education.map(({ degree, institution, year }) => (
+      <div class="border-l-4 border-[#5755ff] pl-4">
+        <h3 class="text-lg font-semibold">{degree}</h3>
+        <p class="text-sm text-neutral-600">{institution} — {year}</p>
+      </div>
+    ))}
   </div>
-))}
+</section>
