@@ -1,22 +1,29 @@
 ---
-import type { EducationEntry } from "@types";
-
-export interface Props {
-  education: EducationEntry[];
-}
-
-const { education } = Astro.props;
+import Section from "./Section.astro";
 ---
 
-<section id="education" class="py-12 bg-[#0f0f0f] text-gray-300">
-  <h2 class="text-2xl font-semibold text-center mb-8 text-white">🎓 Education</h2>
-  <div class="max-w-3xl mx-auto space-y-6">
-    {education.map(({ degree, institution, year }) => (
-      <div class="border-l-4 border-[#5755ff] pl-4">
-        <h3 class="text-lg font-medium text-white">{degree}</h3>
-        <p class="text-sm text-gray-400">{institution} — {year}</p>
-      </div>
-    ))}
+<Section text="Education" href="education">
+  <div class="mb-10">
+    <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
+      University of York
+    </h3>
+    <div class="flex flex-col items-start pb-5">
+      <h4 class="mb-0.5 font-serif text-2xl font-medium text-primary">
+        M.Sc. Advanced Computer Science
+      </h4>
+      <span class="pb-[2px] text-sm text-white/70">2023</span>
+    </div>
   </div>
-</section>
 
+  <div class="mb-10">
+    <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
+      KIIT University
+    </h3>
+    <div class="flex flex-col items-start pb-5">
+      <h4 class="mb-0.5 font-serif text-2xl font-medium text-primary">
+        B.Tech Computer Science and Engineering
+      </h4>
+      <span class="pb-[2px] text-sm text-white/70">2018</span>
+    </div>
+  </div>
+</Section>
