@@ -8,13 +8,13 @@ export interface Props {
 const { education } = Astro.props;
 ---
 
-<section id="education" class="py-12">
+<section id="education" class="py-12 bg-[#5755ff] text-white">
   <h2 class="text-2xl font-bold text-center mb-8">🎓 Education</h2>
   <div class="max-w-3xl mx-auto space-y-6">
     {education.map(({ degree, institution, year }) => (
-      <div class="border-l-4 border-[#5755ff] pl-4">
+      <div class="border-l-4 border-white pl-4">
         <h3 class="text-lg font-semibold">{degree}</h3>
-        <p class="text-sm text-neutral-600">{institution} — {year}</p>
+        <p class="text-sm">{institution} — {year}</p>
       </div>
     ))}
   </div>
