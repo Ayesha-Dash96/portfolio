@@ -15,7 +15,7 @@ export const SITE_CONFIG: SiteConfig = {
   socialLinks: [
     { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
     { text: "Github", href: "https://github.com/Ayesha-Dash96" },
-    { text: "Resume", href: "/resume.pdf" },
+    { text: "Resume", href: "/Ayesha.pdf" },
   ],
   socialImage: "/AD.jpg",
   canonicalURL: "https://ayesha-dash.vercel.app/",
