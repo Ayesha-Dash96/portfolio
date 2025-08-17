@@ -15,11 +15,18 @@ export interface SiteContent {
   about: AboutProps;
 }
 
+export type EducationEntry {
+  degree: string;
+  institution: string;
+  year: string;
+}
+
 export interface HeroProps {
   name: string;
   specialty: string;
   summary: string;
   email: string;
+  resumeLink?: string;
 }
 
 export interface ExperienceProps {
