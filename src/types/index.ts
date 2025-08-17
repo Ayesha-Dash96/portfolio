@@ -16,16 +16,16 @@ export interface SiteContent {
   about: AboutProps;
 }
 
-export type TechStackItem {
+export type TechStackItem = {
   name: string;
   icon?: string;
-}
+};
 
-export type EducationEntry {
+export type EducationEntry = {
   degree: string;
   institution: string;
   year: string;
-}
+};
 
 export interface HeroProps {
   name: string;
