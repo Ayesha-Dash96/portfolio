@@ -6,7 +6,7 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "Backend Engineer with 4+ years of experience in Java, Spring Boot, Kafka, and AWS. Specialized in building scalable microservices, event-driven systems, and CI/CD automation.",
   lang: "en",
-  siteLogo: "/ayesha-small.jpg",
+  siteLogo: "/AD_small.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
@@ -14,10 +14,10 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   socialLinks: [
     { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" }, // Replace with your actual GitHub
+    { text: "Github", href: "https://github.com/Ayesha-Dash96" }, 
   ],
-  socialImage: "/ayesha-og.png",
-  canonicalURL: "https://your-portfolio-url.com", // Replace with your actual site
+ // socialImage: "/AD.jpg",
+  canonicalURL: "https://astrozen-swart.vercel.app/",
 };
 export const SITE_CONTENT: SiteContent = {
   hero: {
@@ -74,21 +74,21 @@ export const SITE_CONTENT: SiteContent = {
       name: "Property Booking Platform",
       summary: "A real estate platform with booking, messaging, and AI-powered recommendations.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen", // Replace with your actual repo
+     // linkSource: "https://github.com/immois/astro-zen", // Replace with your actual repo
       image: "/property-booking.png",
     },
     {
       name: "Insurance Claims Engine",
       summary: "A distributed backend system for fraud detection and claims processing.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+     // linkSource: "https://github.com/immois/astro-zen",
       image: "/claims-engine.png",
     },
     {
       name: "Policy Administration System",
       summary: "A quote-to-policy issuance platform with billing and document automation.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+     // linkSource: "https://github.com/immois/astro-zen",
       image: "/policy-admin.png",
     },
   ],
@@ -98,7 +98,7 @@ export const SITE_CONTENT: SiteContent = {
 
       My work spans property platforms, insurance engines, and real-time data pipelines—each built with a focus on scalability, security, and operational excellence. Whether it's Kafka partitioning, CI/CD automation, or multi-database orchestration, I thrive on turning architectural vision into production-grade reality.
     `,
-    image: "/ayesha-big.jpg",
+    image: "/AD.jpg",
   },
 };
 // #5755ff
