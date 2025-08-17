@@ -31,7 +31,7 @@ export const SITE_CONTENT: SiteContent = {
     resumeLink: "/Ayesha.pdf",
   },
   techStack: [
-    "Java", "Spring Boot", "Kafka", "Redis", "PostgreSQL", "MySQL",
+    "Java", "Spring Boot", "Kafka", "Redis", "PostgreSQL", "MySQL", "LLM"
     "AWS ECS", "Docker", "GraphQL", "OAuth2", "JWT", "Prometheus", "Grafana",
     "Swagger", "Postman", "GitHub Actions", "Jenkins", "CI/CD", "Microservices",
   ],
