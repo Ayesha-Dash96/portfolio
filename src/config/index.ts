@@ -36,12 +36,17 @@ export const SITE_CONTENT: SiteContent = {
     "Swagger", "Postman", "GitHub Actions", "Jenkins", "CI/CD", "Microservices",
   ],
   education: [
-    {
-      degree: "M.Sc. Advanced Computer Science",
-      institution: "University of York",
-      year: "2023",
-    },
-  ],
+  {
+    degree: "M.Sc. Advanced Computer Science",
+    institution: "University of York",
+    year: "2024",
+  },
+  {
+    degree: "B.Tech Computer Science and Engineering",
+    institution: "KIIT University",
+    year: "2018",
+  },
+],
   experience: [
     {
       company: "Let Sell Properties",
