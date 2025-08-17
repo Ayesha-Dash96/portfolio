@@ -32,10 +32,28 @@ export const SITE_CONTENT: SiteContent = {
     resumeLink: "/Ayesha.pdf",
   },
   techStack: [
-    "Java", "Spring Boot", "Kafka", "Redis", "PostgreSQL", "MySQL", "LLM"
-    "AWS ECS", "Docker", "GraphQL", "OAuth2", "JWT", "Prometheus", "Grafana",
-    "Swagger", "Postman", "GitHub Actions", "Jenkins", "CI/CD", "Microservices",
-  ],
+  { name: "Java" },
+  { name: "Spring Boot" },
+  { name: "Kafka" },
+  { name: "Redis" },
+  { name: "PostgreSQL" },
+  { name: "MySQL" },
+  { name: "LLM" },
+  { name: "AWS ECS" },
+  { name: "Docker" },
+  { name: "GraphQL" },
+  { name: "OAuth2" },
+  { name: "JWT" },
+  { name: "Prometheus" },
+  { name: "Grafana" },
+  { name: "Swagger" },
+  { name: "Postman" },
+  { name: "GitHub Actions" },
+  { name: "Jenkins" },
+  { name: "CI/CD" },
+  { name: "Microservices" },
+],
+
   education: [
   {
     degree: "M.Sc. Advanced Computer Science",
