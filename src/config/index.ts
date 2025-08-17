@@ -16,7 +16,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
     { text: "Github", href: "https://github.com/Ayesha-Dash96" }, 
   ],
- // socialImage: "/AD.jpg",
+ socialImage: "/AD.jpg",
   canonicalURL: "https://astrozen-swart.vercel.app/",
 };
 export const SITE_CONTENT: SiteContent = {
@@ -74,21 +74,21 @@ export const SITE_CONTENT: SiteContent = {
       name: "Property Booking Platform",
       summary: "A real estate platform with booking, messaging, and AI-powered recommendations.",
       linkPreview: "/",
-     // linkSource: "https://github.com/immois/astro-zen", // Replace with your actual repo
+      linkSource: "https://github.com/immois/astro-zen", // Replace with your actual repo
       image: "/property-booking.png",
     },
     {
       name: "Insurance Claims Engine",
       summary: "A distributed backend system for fraud detection and claims processing.",
       linkPreview: "/",
-     // linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://github.com/immois/astro-zen",
       image: "/claims-engine.png",
     },
     {
       name: "Policy Administration System",
       summary: "A quote-to-policy issuance platform with billing and document automation.",
       linkPreview: "/",
-     // linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://github.com/immois/astro-zen",
       image: "/policy-admin.png",
     },
   ],
