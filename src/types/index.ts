@@ -43,13 +43,13 @@ export interface ExperienceProps {
   summary: string | string[];
 }
 
-//export interface ProjectProps {
-  //name: string;
-  //summary: string;
-  //image: string;
-  //linkPreview?: string;
-  //linkSource?: string;
-//}
+export interface ProjectProps {
+  name: string;
+  summary: string;
+  image: string;
+  linkPreview?: string;
+  linkSource?: string;
+}
 
 export interface AboutProps {
   description: string;
