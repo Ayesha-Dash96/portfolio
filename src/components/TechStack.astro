@@ -8,11 +8,11 @@ export interface Props {
 const { techStack } = Astro.props;
 ---
 
-<section id="techstack">
-  <h2 class="section-title">Tech Stack</h2>
+<section id="techstack" class="py-12 bg-[#5755ff] text-white">
+  <h2 class="section-title text-white">Tech Stack</h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
     {techStack.map(({ name }) => (
-      <div class="tech-pill">{name}</div>
+      <div class="tech-pill bg-white text-[#5755ff] font-semibold">{name}</div>
     ))}
   </div>
 </section>
