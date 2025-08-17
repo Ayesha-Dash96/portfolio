@@ -17,7 +17,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Github", href: "https://github.com/Ayesha-Dash96" }, 
   ],
  socialImage: "/AD.jpg",
-  canonicalURL: "https://astrozen-swart.vercel.app/",
+  canonicalURL: "https://ayesha-dash.vercel.app/",
 };
 export const SITE_CONTENT: SiteContent = {
   hero: {
@@ -75,21 +75,21 @@ export const SITE_CONTENT: SiteContent = {
       summary: "A real estate platform with booking, messaging, and AI-powered recommendations.",
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen", // Replace with your actual repo
-      image: "/property-booking.png",
+      image: "/property.jpg",
     },
     {
       name: "Insurance Claims Engine",
       summary: "A distributed backend system for fraud detection and claims processing.",
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/claims-engine.png",
+      image: "/claims.jpg",
     },
     {
       name: "Policy Administration System",
       summary: "A quote-to-policy issuance platform with billing and document automation.",
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/policy-admin.png",
+      image: "/policy.jpg",
     },
   ],
   about: {
