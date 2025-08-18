@@ -127,24 +127,24 @@ export const SITE_CONTENT: SiteContent = {
 
   projects: [
     {
-      name: "Property Booking Platform",
+      name: "Portfolio creation",
       summary:
-        "Built a scalable backend for a property booking platform using Java, Spring Boot, and Kafka. Integrated Google Maps and Calendar APIs, implemented Redis caching, and experimented with generative AI for personalized recommendations.",
-      linkSource: "", 
+        "I used Vercel’s AstroZen template to build my personal portfolio and made it my own. I cleaned up the code, made the components more reusable, and fixed type issues to keep everything safe and predictable.",
+      linkSource: "https://github.com/Ayesha-Dash96/portfolio", 
       image: "",
     },
     {
-      name: "Insurance Claims Platform",
+      name: "Malicious Agents in Swarm Robotics",
       summary:
-        "Designed distributed microservices for an insurance claims system. Used Kafka for event pipelines, GraphQL for efficient data fetching, and Prometheus + Grafana for observability.",
-      linkSource: "",
+        "I explored how malicious agents can disrupt swarm robotics systems by simulating attacks and studying their impact on swarm behavior.",
+      linkSource: "https://github.com/Ayesha-Dash96/swarmhack",
       image: "",
     },
     {
-      name: "Policy Administration System",
+      name: "Recipe Finder",
       summary:
-        "Developed APIs for quote generation and billing. Integrated Stripe for payments and built notification services to improve overdue collection. Enhanced PostgreSQL performance and added monitoring pipelines.",
-      linkSource: "",
+        "Recipe Explorer is a full-stack recipe finder designed to solve the age-old problem of 'what to cook?' The application allows users to input a list of ingredients, which are then used to query a external API.",
+      linkSource: "https://github.com/Ayesha-Dash96/RecipeFinder",
       image: "",
     },
   ],
