@@ -1,7 +1,10 @@
 ---
 import type { SiteConfig } from "@types";
 
-type Props = Pick<SiteConfig, "author" | "socialLinks">;
+type Props = {
+  author: SiteConfig["author"];
+  socialLinks: SiteConfig["socialLinks"];
+};
 
 const { author, socialLinks } = Astro.props;
 const currentYear = new Date().getFullYear();
@@ -25,9 +28,7 @@ const currentYear = new Date().getFullYear();
       ))
     }
   </ul>
-  <p class="text-xs">
-    {author} © {currentYear}. <span class="text-neutral"
-      >Designed & Developed by</span
-    > Moisés Machuca
-  </p>
+<p class="text-xs">
+  {author} © {currentYear}.
+</p>
 </footer>

@@ -10,12 +10,8 @@ export const SITE_CONFIG: SiteConfig = {
   navLinks: [
     { text: "Tech Stack", href: "#techstack" },
     { text: "Experience", href: "#experience" },
+    { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
-  ],
-  socialLinks: [
-    { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
-    { text: "Github", href: "https://github.com/Ayesha-Dash96" },
-    { text: "Resume", href: "/ayesha-dash-resume.pdf" },
   ],
   socialImage: "/AD.jpg",
   canonicalURL: "https://ayesha-dash.vercel.app/",
@@ -31,9 +27,16 @@ export const SITE_CONTENT: SiteContent = {
     email: "dashayesha17@gmail.com",
     resumeLink: "/ayesha-dash-resume.pdf",
   },
+  socialLinks: [
+    { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
+    { text: "Github", href: "https://github.com/Ayesha-Dash96" },
+    { text: "Resume", href: "/ayesha-dash-resume.pdf" },
+  ],
   techStack: [
   { name: "Java" },
   { name: "Spring Boot" },
+  {name: "Python"},
+  {name: "GenAI"},
   { name: "Kafka" },
   { name: "Redis" },
   { name: "PostgreSQL" },
@@ -53,7 +56,6 @@ export const SITE_CONTENT: SiteContent = {
   { name: "CI/CD" },
   { name: "Microservices" },
 ],
-
   education: [
   {
     degree: "M.Sc. Advanced Computer Science",
@@ -110,6 +112,31 @@ export const SITE_CONTENT: SiteContent = {
       ],
     },
   ],
+
+  projects: [
+    {
+      name: "Property Booking Platform",
+      summary:
+        "Built a scalable backend for a property booking platform using Java, Spring Boot, and Kafka. Integrated Google Maps and Calendar APIs, implemented Redis caching, and experimented with generative AI for personalized recommendations.",
+      linkSource: "https://letsellproperties.com", 
+      image: "/projects/property-booking.jpg",
+    },
+    {
+      name: "Insurance Claims Platform",
+      summary:
+        "Designed distributed microservices for an insurance claims system. Used Kafka for event pipelines, GraphQL for efficient data fetching, and Prometheus + Grafana for observability.",
+      linkSource: "",
+      image: "",
+    },
+    {
+      name: "Policy Administration System",
+      summary:
+        "Developed APIs for quote generation and billing. Integrated Stripe for payments and built notification services to improve overdue collection. Enhanced PostgreSQL performance and added monitoring pipelines.",
+      linkSource: "",
+      image: "",
+    },
+  ],
+  
   about: {
     description: `
       Hi, I’m Ayesha Dash — a backend engineer who thrives on solving complex engineering challenges with clean, scalable, and resilient solutions.

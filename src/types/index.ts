@@ -3,18 +3,26 @@ export interface SiteConfig extends HeaderProps {
   description: string;
   lang: string;
   author: string;
-  socialLinks: { text: string; href: string }[];
   socialImage: string;
   canonicalURL?: string;
 }
 
 export interface SiteContent {
   hero: HeroProps;
+  socialLinks: SocialLink[];
   techStack: TechStackItem[];
   education: EducationEntry[];
   experience: ExperienceProps[];
+  projects: ProjectProps[];
   about: AboutProps;
 }
+
+export type SocialLink = {
+  text: string;
+  href: string;
+  icon?: string;
+};
+
 
 export type TechStackItem = {
   name: string;

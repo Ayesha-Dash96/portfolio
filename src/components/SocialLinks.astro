@@ -1,0 +1,19 @@
+---
+import Section from "./Section.astro";
+import type { ExperienceProps } from "@types";
+
+const { socialLinks } = Astro.props;
+---
+
+<section id="social" class="mt-10 mb-6 flex justify-center gap-6 text-white">
+  {socialLinks.map((link) => (
+    <a
+      href={link.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-[#5755ff] transition-colors duration-200"
+    >
+      {link.text}
+    </a>
+  ))}
+</section>
