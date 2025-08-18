@@ -6,13 +6,25 @@ import Experience from "@components/Experience.astro";
 import Education from "@components/Education.astro";
 import TechStack from "@components/TechStack.astro";
 import Projects from "@components/Projects.astro";
+import Section from "@components/Section.astro";
 import About from "@components/About.astro";
 
 import "../styles/global.css";
+
+const { socialLinks, techStack } = SITE_CONFIG;
+---
+
+<Layout>
+  <Section title="Connect with me" items={socialLinks} />
+  <Section title="Tech Stack" items={techStack} />
+  <!-- Add more sections here -->
+</Layout>
+
 ---
 
 <Layout>
   <Hero {...SITE_CONTENT.hero} />
+  <Section title="Connect with me" items={SITE_CONTENT.socialLinks} />
   <TechStack techStack={SITE_CONTENT.techStack} />
   <Experience experience={SITE_CONTENT.experience} />
   <Education education={SITE_CONTENT.education} />

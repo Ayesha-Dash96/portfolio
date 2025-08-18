@@ -1,17 +1,38 @@
 ---
 interface Props {
-  text: string;
-  href: string;
+  title: string;
+  items: {
+    text: string;
+    href: string;
+    icon?: string; // optional icon path
+  }[];
 }
 
-const { text, href } = Astro.props;
+const { title, items } = Astro.props;
 ---
 
-<section id={href} class="py-24">
-  <h2
-    class="mb-14 font-serif text-4xl font-bold tracking-tighter text-white md:text-5xl"
-  >
-    {text}
-  </h2>
-  <slot />
+<section class="mb-10 text-white">
+  <h2 class="mb-4 text-xl font-semibold tracking-tight">{title}</h2>
+  <ul class="flex flex-wrap gap-4 text-sm">
+    {items.map(({ text, href, icon }) => (
+      <li>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-3 py-2 rounded hover:text-primary transition-colors duration-200"
+        >
+          {icon && (
+            <img
+              src={icon}
+              alt={`${text} icon`}
+              class="h-4 w-4"
+              loading="lazy"
+            />
+          )}
+          {text}
+        </a>
+      </li>
+    ))}
+  </ul>
 </section>
