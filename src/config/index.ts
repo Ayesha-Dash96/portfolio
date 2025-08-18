@@ -1,4 +1,5 @@
 import type { SiteConfig, SiteContent } from "../types";
+import type { SocialLink } from "@types";
 
 export const SITE_CONFIG: SiteConfig = {
   title: "Ayesha Dash — Backend Engineer",
@@ -17,6 +18,21 @@ export const SITE_CONFIG: SiteConfig = {
   canonicalURL: "https://ayesha-dash.vercel.app/",
 };
 
+export const socialLinks: SocialLink[] = [
+  {
+    text: "GitHub",
+    href: "https://github.com/Ayesha-Dash96",
+  },
+  {
+    text: "LinkedIn",
+    href: "https://www.linkedin.com/in/ayesha-dash",
+  },
+  {
+    text: "Resume",
+    href: "/ayesha-dash-resume.pdf",
+  },
+];
+
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
@@ -27,11 +43,7 @@ export const SITE_CONTENT: SiteContent = {
     email: "dashayesha17@gmail.com",
     resumeLink: "/ayesha-dash-resume.pdf",
   },
-  socialLinks: [
-    { text: "LinkedIn", href: "http://www.linkedin.com/in/ayesha-dash" },
-    { text: "Github", href: "https://github.com/Ayesha-Dash96" },
-    { text: "Resume", href: "/ayesha-dash-resume.pdf" },
-  ],
+
   techStack: [
   { name: "Java" },
   { name: "Spring Boot" },
@@ -118,8 +130,8 @@ export const SITE_CONTENT: SiteContent = {
       name: "Property Booking Platform",
       summary:
         "Built a scalable backend for a property booking platform using Java, Spring Boot, and Kafka. Integrated Google Maps and Calendar APIs, implemented Redis caching, and experimented with generative AI for personalized recommendations.",
-      linkSource: "https://letsellproperties.com", 
-      image: "/projects/property-booking.jpg",
+      linkSource: "", 
+      image: "",
     },
     {
       name: "Insurance Claims Platform",

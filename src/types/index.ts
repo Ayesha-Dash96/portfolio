@@ -9,7 +9,6 @@ export interface SiteConfig extends HeaderProps {
 
 export interface SiteContent {
   hero: HeroProps;
-  socialLinks: SocialLink[];
   techStack: TechStackItem[];
   education: EducationEntry[];
   experience: ExperienceProps[];
@@ -54,7 +53,7 @@ export interface ExperienceProps {
 export interface ProjectProps {
   name: string;
   summary: string;
-  image: string;
+  image?: string;
   linkPreview?: string;
   linkSource?: string;
 }

@@ -2,13 +2,16 @@
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { AboutProps, HeroProps } from "@types";
+import SocialLinks from "../components/SocialLinks.astro";
+import { socialLinks } from "@config";
+
 
 type Props = AboutProps & Pick<HeroProps, "name">;
 
 const { description, image, name } = Astro.props;
 ---
 
-<Section text="About Me" href="about">
+<Section title="About Me" href="about">
   <div class="flex flex-col items-center gap-12 md:flex-row md:gap-8">
     <p class="w-auto text-base text-neutral md:pr-5">{description}</p>
     <div
@@ -24,3 +27,5 @@ const { description, image, name } = Astro.props;
     </div>
   </div>
 </Section>
+
+<SocialLinks socialLinks={socialLinks} />

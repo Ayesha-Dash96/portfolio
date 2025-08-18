@@ -12,7 +12,6 @@ const {
   navLinks,
   lang,
   author,
-  socialLinks,
   socialImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
 } = SITE_CONFIG;
@@ -47,6 +46,6 @@ const ogImgUrl = canonicalURL + socialImage;
     <main class="mx-auto max-w-3xl px-5">
       <slot />
     </main>
-    <Footer author={author} socialLinks={socialLinks} />
+    <Footer author={author} />
   </body>
 </html>

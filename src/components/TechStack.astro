@@ -1,4 +1,5 @@
 ---
+import Section from "./Section.astro";
 import type { TechStackItem } from "@types";
 
 export interface Props {
@@ -8,8 +9,7 @@ export interface Props {
 const { techStack } = Astro.props;
 ---
 
-<section id="techstack" class="py-12 bg-black text-white">
-  <h2 class="section-title text-white">⚙️ Tech Stack</h2>
+<Section title="⚙️ Tech Stack" href="techstack">
   <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8">
     {techStack.map(({ name }) => (
       <div class="flex items-center justify-center rounded-md bg-black border border-primary px-4 py-3 text-white font-medium hover:bg-primary hover:text-white transition-colors duration-200">
@@ -17,4 +17,4 @@ const { techStack } = Astro.props;
       </div>
     ))}
   </div>
-</section>
+</Section>

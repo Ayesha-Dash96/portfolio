@@ -1,38 +1,25 @@
 ---
 interface Props {
   title: string;
-  items: {
-    text: string;
-    href: string;
-    icon?: string; // optional icon path
-  }[];
+  href?: string;
+  class?: string;
+  items?: Array<{
+    text?: string;
+    href?: string;
+    platform?: string;
+    url?: string;
+    icon?: string;
+  }>;
 }
 
-const { title, items } = Astro.props;
+import { SITE_CONFIG } from "@config";
+
+const { title, href, class: className } = Astro.props;
 ---
 
-<section class="mb-10 text-white">
-  <h2 class="mb-4 text-xl font-semibold tracking-tight">{title}</h2>
-  <ul class="flex flex-wrap gap-4 text-sm">
-    {items.map(({ text, href, icon }) => (
-      <li>
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-3 py-2 rounded hover:text-primary transition-colors duration-200"
-        >
-          {icon && (
-            <img
-              src={icon}
-              alt={`${text} icon`}
-              class="h-4 w-4"
-              loading="lazy"
-            />
-          )}
-          {text}
-        </a>
-      </li>
-    ))}
-  </ul>
+<section class={`mb-10 ${className || ""}`.trim()}>
+  <h2 id={href} class="mb-4 text-xl font-semibold tracking-tight text-white">{title}</h2>
+  <div class="text-neutral">
+    <slot />
+  </div>
 </section>
