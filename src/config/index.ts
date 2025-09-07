@@ -39,7 +39,7 @@ export const SITE_CONTENT: SiteContent = {
     name: "Ayesha Dash",
     specialty: "Backend Engineer",
     summary:
-      "I’m a backend engineer with 4.10 years of experience building distributed, fault-tolerant systems in Java, Spring Boot, and Kafka. I specialise in designing microservices, orchestrating event-driven workflows, and deploying resilient cloud-native applications on AWS. I hold an M.Sc. in Advanced Computer Science from the University of York, where I deepened my knowledge of scalable architectures and applied research to real-world system challenges.",
+      "I’m a backend engineer with 4.11 years of experience building distributed, fault-tolerant systems in Java, Spring Boot, and Kafka. I specialise in designing microservices, orchestrating event-driven workflows, and deploying resilient cloud-native applications on AWS. I hold an M.Sc. in Advanced Computer Science from the University of York, where I deepened my knowledge of scalable architectures and applied research to real-world system challenges.",
     email: "dashayesha17@gmail.com",
     resumeLink: "/ayesha-dash-resume.pdf",
   },
@@ -81,6 +81,16 @@ export const SITE_CONTENT: SiteContent = {
   },
 ],
   experience: [
+     {
+      company: "Happiest Minds Technologies",
+      position: "Module Lead",
+      startDate: "Aug 2025",
+      endDate: "Present",
+      summary: [
+        "Joined as Module Lead, overseeing Java-based development initiatives within the Product and Digital Engineering Services unit.",
+        "Actively upskilling on cloud-native architectures, microservices design, and containerisation technologies (Docker, Kubernetes) to enhance delivery efficiency and system resilience.",
+      ],
+    },
     {
       company: "Let Sell Properties",
       position: "Backend Developer (Freelance)",
