@@ -29,7 +29,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     text: "Resume",
-    href: "/ayesha-dash-resume.pdf",
+    href: "/ayesha_resume.pdf",
   },
 ];
 
